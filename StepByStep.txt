@@ -1,0 +1,18 @@
+--INICIANDO PROJETO
+  -> yarn add react-native-cli
+
+--CONFIGURANDO FERRAMENTAS DE GUIA DE ESTILO
+  ->Criar '.editorconfig'
+    ->Configurar
+  ->Excluir '.eslint.js'
+  ->Instalar eslint
+    ->yarn add eslint -D
+  ->Iniciar configurações
+    ->yarn eslint --init
+  ->Excluir 'package-lock.json'
+  ->Executar comando 'yarn'
+  ->Instalar 'prettier' e demais plugins
+    ->yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+  ->Configurar '.eslintrc.js'
+  ->Criar e configurar '.prettierrc'
+
