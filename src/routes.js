@@ -14,7 +14,7 @@ const Stack = createStackNavigator();
 export default function Routes() {
   return (
     <Stack.Navigator
-      headerMode="float"
+      headerMode="screen"
       screenOptions={{
         header: ({ navigation }) => {
           return <Header navigation={navigation} />;

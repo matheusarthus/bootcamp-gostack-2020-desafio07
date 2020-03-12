@@ -1,5 +1,6 @@
 /* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { formatPrice } from '../../util/format';
@@ -19,7 +20,7 @@ import {
   AddButtonText,
 } from './styles';
 
-export default class Home extends Component {
+class Home extends Component {
   state = {
     products: [],
   };
@@ -34,6 +35,16 @@ export default class Home extends Component {
 
     this.setState({ products: data });
   }
+
+  handleAddProduct = product => {
+    console.log(product);
+    const { dispatch } = this.props;
+
+    dispatch({
+      type: 'ADD_TO_CART',
+      product,
+    });
+  };
 
   render() {
     const { products } = this.state;
@@ -50,7 +61,7 @@ export default class Home extends Component {
               <ProductImage source={{ uri: item.image }} />
               <ProductTitle>{item.title}</ProductTitle>
               <ProductPrice>{item.priceFormatted}</ProductPrice>
-              <AddButton onPress={() => {}}>
+              <AddButton onPress={() => this.handleAddProduct(item)}>
                 <ProductAmount>
                   <Icon name="add-shopping-cart" color="#fff" size={20} />
                   <ProductAmountText>3</ProductAmountText>
@@ -64,3 +75,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default connect()(Home);

@@ -103,4 +103,25 @@
   ->Configurar 'HOME'
   ->Configurar 'CART'
 
+--CONFIGURAR O REDUX
+  ->Instalar o pacote 'Redux'
+    ->yarn add redux react-redux
+  ->Criar pasta 'store' em 'src'
+    ->Criar arquivo 'index.js'
+      ->Configurar arquivo
+  ->Configurar <Provider> no arquivo 'src/index.js'
+  ->Criar os 'reducers'
+    ->Criar pasta 'module' em 'store'
+      ->Criar pasta 'cart'
+        ->Criar arquivo 'reducer.js'
+      ->Criar arquivo 'rootReducer.js'
+        ->Cinfigurar arquivo
 
+--IMPLEMENTAR REDUX NO COMPONENT 'HEADER'
+  ->Importar { connect } from 'react-redux' para o 'Header/index.js'
+
+--IMPLEMENTAR REDUX NO COMPONENT 'HOME'
+  ->Importar { connect } from 'react-redux' para o 'Home/index.js'
+
+--INTEGRAR REACTOTRON COM REDUX
+  ->yarn add reactotron-react-js reactotron-redux
