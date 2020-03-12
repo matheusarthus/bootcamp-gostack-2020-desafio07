@@ -25,7 +25,6 @@ export default class Home extends Component {
   };
 
   async componentDidMount() {
-    console.log(this.props);
     const response = await api.get('/products');
 
     const data = response.data.map(product => ({

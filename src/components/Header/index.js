@@ -11,8 +11,6 @@ import {
 } from './styles';
 
 export default function Header({ navigation }) {
-  console.log(navigation);
-
   return (
     <Wrapper>
       <BasketImage onPress={() => navigation.navigate('Home')}>

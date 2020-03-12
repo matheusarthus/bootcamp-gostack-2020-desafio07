@@ -13,8 +13,8 @@ export const Wrapper = styled.SafeAreaView`
 `;
 
 export const BasketImage = styled.TouchableOpacity`
-  height: 185px;
-  width: 24px;
+  height: 24px;
+  width: 185px;
   flex: 1;
   align-items: flex-start;
   justify-content: flex-start;

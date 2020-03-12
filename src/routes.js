@@ -1,9 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import colors from './styles/colors';
 
 import Header from './components/Header';
 
@@ -15,9 +14,13 @@ const Stack = createStackNavigator();
 export default function Routes() {
   return (
     <Stack.Navigator
+      headerMode="float"
       screenOptions={{
         header: ({ navigation }) => {
           return <Header navigation={navigation} />;
+        },
+        cardStyle: {
+          backgroundColor: `${colors.dark}`,
         },
       }}
     >
