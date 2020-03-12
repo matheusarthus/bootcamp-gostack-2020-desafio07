@@ -9,7 +9,15 @@ export const Wrapper = styled.SafeAreaView`
   background: ${colors.dark};
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px;
+  padding: 20px;
+`;
+
+export const BasketImage = styled.TouchableOpacity`
+  height: 185px;
+  width: 24px;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
 `;
 
 export const Logo = styled.Image.attrs({
@@ -26,7 +34,6 @@ export const BasketContainer = styled.TouchableOpacity`
   flex: 1;
   align-items: flex-end;
   justify-content: flex-end;
-  left: 110px;
 `;
 
 export const ItemCount = styled.Text`

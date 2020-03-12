@@ -16,35 +16,13 @@ export default function Routes() {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerStyle: {
-          backgroundColor: '#191920',
+        header: ({ navigation }) => {
+          return <Header navigation={navigation} />;
         },
       }}
     >
-      <Stack.Screen
-        name="Home"
-        component={Home}
-        options={{
-          headerTitle: props => <Header {...props} />,
-          headerRight: ({ navigation }) => (
-            <TouchableOpacity
-              onPress={() => {
-                navigation.navigate('Cart');
-              }}
-            >
-              <Icon name="shopping-basket" color="#FFF" size={24} />
-            </TouchableOpacity>
-          ),
-        }}
-      />
-      <Stack.Screen
-        name="Cart"
-        component={Cart}
-        options={{
-          title: 'Cart',
-          headerTitleAlign: 'center',
-        }}
-      />
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Cart" component={Cart} />
     </Stack.Navigator>
   );
 }

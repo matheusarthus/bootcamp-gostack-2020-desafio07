@@ -6,7 +6,9 @@ export const Container = styled.View`
   background: ${colors.dark};
 `;
 
-export const List = styled.FlatList``;
+export const List = styled.FlatList`
+  padding: 20px 10px;
+`;
 
 export const Product = styled.View`
   background: #fff;
