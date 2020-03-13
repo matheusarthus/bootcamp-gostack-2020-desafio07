@@ -115,7 +115,10 @@
       ->Criar pasta 'cart'
         ->Criar arquivo 'reducer.js'
       ->Criar arquivo 'rootReducer.js'
-        ->Cinfigurar arquivo
+        ->Configurar arquivo
+
+--INTEGRAR REACTOTRON COM REDUX
+  ->yarn add reactotron-react-js reactotron-redux
 
 --IMPLEMENTAR REDUX NO COMPONENT 'HEADER'
   ->Importar { connect } from 'react-redux' para o 'Header/index.js'
@@ -123,5 +126,14 @@
 --IMPLEMENTAR REDUX NO COMPONENT 'HOME'
   ->Importar { connect } from 'react-redux' para o 'Home/index.js'
 
---INTEGRAR REACTOTRON COM REDUX
-  ->yarn add reactotron-react-js reactotron-redux
+--IMPLEMENTAR REDUX NO COMPONENT 'CART' E AS FUNCIONALIDADES
+  ->Instalar ferramenta 'immer', que auxilia na manipulação dos estados
+    ->yarn add immer
+  ->Alterar 'reducer' do 'cart'
+  ->Importar { connect } from 'react-redux' para o 'Cart/index.js'
+
+--REFATORAR AS ACTIONS
+  ->Criar arquivo 'actions.js' em 'modules/cart'
+    ->Configurar arquivo
+
+--CONFIGURANDO REDUX SAGA
