@@ -137,3 +137,15 @@
     ->Configurar arquivo
 
 --CONFIGURANDO REDUX SAGA
+  ->Instalar o 'redux-saga'
+    ->yarn add redux-saga
+    ->Criar pasta 'sagas.js' em 'store/modules/cart'
+      ->Configurar arquivo
+    ->Criar arquivo 'rootSaga.js'
+      ->Configurar arquivo
+
+-INTEGRAR REACTOTRON COM O REDUX SAGA
+  ->yarn add reactotron-redux-saga
+
+--NAVEGANDO NO SAGA
+  ->Criar arquivo 'navigation.js' em 'services'
