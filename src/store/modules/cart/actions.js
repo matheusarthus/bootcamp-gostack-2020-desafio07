@@ -14,7 +14,7 @@ export function addToCartSuccess(product) {
 
 export function removeFromCart(id) {
   return {
-    type: '@cart/REMOVE_FROM_CART',
+    type: '@cart/REMOVE',
     id,
   };
 }

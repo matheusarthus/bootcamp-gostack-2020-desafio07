@@ -148,4 +148,8 @@
   ->yarn add reactotron-redux-saga
 
 --NAVEGANDO NO SAGA
-  ->Criar arquivo 'navigation.js' em 'services'
+  ->Criar arquivo 'RootNavigation.js' em 'services'
+    ->Configurar arquivo
+  ->Passar o 'RootNavigation.js' como referência no <NavigationContainer ref={navigationRef}>
+    do arquivo 'src/index.js'
+  ->Importar 'RootNavigation.navigate();' para dentro dos arquivos que necessitar de navegação.
